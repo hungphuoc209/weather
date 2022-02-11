@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDailyItem"
+        android:layout_width="@dimen/dimen_128"
+        android:layout_height="@dimen/dimen_176"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_10"
+        app:cardBackgroundColor="@color/holo_blue"
+        app:cardCornerRadius="@dimen/dimen_23"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvWeekdayItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/opensan_bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpUsage" />
+
+            <ImageView
+                android:id="@+id/imgWeatherItem"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/margin_5"
+                android:contentDescription="@string/content_description"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvWeekdayItem" />
+
+            <TextView
+                android:id="@+id/tvTempItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temp_demo"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_27"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgWeatherItem"
+                tools:ignore="SpUsage" />
+
+            <ImageView
+                android:id="@+id/imgMinTempItem"
+                android:layout_width="@dimen/dimen_20"
+                android:layout_height="@dimen/dimen_20"
+                android:background="@drawable/ic_min_temp"
+                android:contentDescription="@string/content_description"
+                app:layout_constraintEnd_toEndOf="@+id/tvMinTempItem"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvMinTempItem"
+                app:layout_constraintTop_toBottomOf="@+id/tvTempItem" />
+
+            <ImageView
+                android:id="@+id/imgMaxTempItem"
+                android:layout_width="@dimen/dimen_20"
+                android:layout_height="@dimen/dimen_20"
+                android:background="@drawable/ic_max_temp"
+                android:contentDescription="@string/content_description"
+                app:layout_constraintEnd_toEndOf="@+id/tvMaxTempItem"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvMaxTempItem"
+                app:layout_constraintTop_toBottomOf="@+id/tvTempItem" />
+
+            <TextView
+                android:id="@+id/tvMaxTempItem"
+                android:layout_width="@dimen/dimen_20"
+                android:layout_height="@dimen/dimen_20"
+                android:layout_marginEnd="20dp"
+                android:text="@string/temp_demo"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgMaxTempItem"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/tvMinTempItem"
+                android:layout_width="@dimen/dimen_20"
+                android:layout_height="@dimen/dimen_20"
+                android:layout_marginStart="20dp"
+                android:text="@string/temp_demo"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgMinTempItem"
+                tools:ignore="SpUsage" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size
+                android:width="@dimen/dimen_40"
+                android:height="@dimen/dimen_40" />
+            <solid android:color="@color/transparent" />
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/dimen_10"
+        android:drawable="@drawable/ic_menu"
+        android:left="@dimen/dimen_5"
+        android:right="@dimen/dimen_5"
+        android:top="@dimen/dimen_10" />
+</layer-list>

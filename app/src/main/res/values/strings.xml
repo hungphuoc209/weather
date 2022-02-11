@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="content_description">contentDescription</string>
+    <string name="explore">Explore</string>
+    <string name="search_by_city">Search by City</string>
+    <string name="current_city">CurrentCity</string>
+    <string name="search">Search</string>
+    <string name="temp_demo">00°</string>
+    <string name="humidity">Humidity : </string>
+    <string name="wind">Wind : </string>
+    <string name="current">Current</string>
+    <string name="description">Description</string>
+    <string name="next_4_days">Hourly</string>
+    <string name="weekday_demo">Saturday</string>
+    <string name="time_demo">14:00</string>
+    <string name="next_15_days">Next 15 days</string>
+    //format
+    <string name="temp_C_format"> %.0f°C</string>
+    <string name="wind_ms_format">Wind: %.1f m/s</string>
+    <string name="pressure_mb_format">Pressure: %.1f mb</string>
+    <string name="humidity_format">Humidity : %d %% </string>
+    <string name="sunrise_format">Sunrise : %s</string>
+    <string name="sunset_format">Sunset : %s</string>
+    <string name="uv_format">UV Index : %.1f (%s)</string>
+    <string name="lastupdate_format">Last update:\n%s</string>
+    <string name="no_city_found">No City found</string>
+    <string name="_404_error_string">HTTP 404 Not Found</string>
+    <string name="refresh_false_noti">Refresh after 2 minutes since last query</string>
+    <string name="internet_error">No internet connection</string>
+    <string name="load_error">Load Error</string>
+    <string name="network_error">Network Error</string>
+    <string name="about_title">Weather Forecast App</string>
+    <string name="default_city">Default City</string>
+    <string name="set">set</string>
+</resources>
